@@ -1,0 +1,9 @@
+{
+    "python.linting.enabled": true,
+    "python.linting.pylintEnabled": true,
+    "python.linting.mypyEnabled": true,
+    "[python]":{
+        "editor.formatOnSave": true,
+        "files.trimTrailingWhitespace": true
+    }
+}

@@ -14,7 +14,7 @@
     "skills": [
         {
             "category": "Web Technologies",
-            "items": [
+            "skills": [
                 "ASP.NET",
                 "ASP.NET MVC",
                 "Razor",
@@ -26,7 +26,7 @@
         },
         {
             "category": "Languages",
-            "items": [
+            "skills": [
                 "C#",
                 "Python (2/3)",
                 "Javascript",
@@ -39,7 +39,7 @@
         },
         {
             "category": "Databases",
-            "items": [
+            "skills": [
                 "Sql Server 2000-2017 & Azure",
                 "Sqlite",
                 "PostgreSQL"
@@ -47,7 +47,7 @@
         },
         {
             "category": "Tooling",
-            "items": [
+            "skills": [
                 "Git",
                 "Docker",
                 "RabbitMQ",
@@ -58,7 +58,7 @@
         },
         {
             "category": "Operating Systems",
-            "items": [
+            "skills": [
                 "Windows",
                 "Windows Server 2003-2012",
                 "Ubuntu/Debian",
@@ -67,7 +67,7 @@
         },
         {
             "category": "Other",
-            "items": [
+            "skills": [
                 "Active Directory Administration & Setup",
                 "Exchange Administration & Setup",
                 "Network Management",
@@ -139,6 +139,17 @@
             "endDate": "April 2011"
         }
     ],
-    "projects": [],
-    "$schema": "./data.schema.json"
+    "projects": [
+        {
+            "name": "Request Module Update",
+            "employer": "Avchem",
+            "dateRange": "2006",
+            "teamSize": 2,
+            "role": "Developer",
+            "responsibilities": "Design and Implementation",
+            "technologies": ["VB.Net", "ASP.Net", "SQL Server", "Javascript"],
+            "description": "The request module allows customers to define a form and workflow for a process. This was then added to the system where end-users could submit requests for a process. The update added several features: graphical designers for both the form and workflow, with the workflow editor displaying a dynamically generated flowchart for the current workflow; the ability to have a step on the workflow be subdivided into several approvals that can be done in parallel; redirecting the workflow based on fields on the form; and the ability to create groups of users to be included on a workflow step, that can inherit users from sites above, and allows for easier maintenance; and the ability to import and export definitions of requests between instances (training, production, etc). Existing data was transformed and adapted to newer standards either on the fly, for simple changes, or with a Python script that was run during deployment."
+        }
+    ],
+    "$schema": "./resumeschema.json"
 }

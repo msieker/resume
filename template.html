@@ -1,0 +1,68 @@
+<html>
+
+<head>
+  <title>Resume for {{personalInfo.name}}</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  </style>
+</head>
+
+<body>
+  <h1>{{personalInfo.name}}</h1>
+  <div class="personal_info">
+    <div class="email">{{personalInfo.email}}</div>
+    <div class="location">{{personalInfo.location}}</div>
+  </div>
+  <div class="highlights">
+    <h2>Summary</h2>
+    <ul>
+      {% for item in highlights %}
+      <li>{{item}}</li>
+      {% endfor %}
+    </ul>
+  </div>
+  <div class="skills">
+    <h2>Technical Skills</h2>
+    <dl>
+      {% for skill in skills %}
+        <dt>{{ skill.category }}</dt>
+        <dd>{{ skill.skills|join(", ") }}</dd>
+      {% endfor %}
+    </dl>
+  </div>
+  <div class="work">
+    <h2>Work Experience</h2>
+    {% for job in work %}
+    <div class="job">
+      <h3>{{ job.position}} at {{ job.employer }} from {{ job.startDate }} to {{ job.endDate}}</h3>
+      <ul>
+        {% for highlight in job.highlights %}
+        <li>{{ highlight }}</li>
+        {% endfor %}
+      </ul>
+    </div>
+    {% endfor %}
+  </div>
+  <div class="projects">
+    <h2>Major Projects</h2>
+    {% for project in projects %}
+    <div class="project">
+      <h3>{{project.name}} at {{ project.employer }} ({{ project.dateRange }})</h3>
+      <dl>
+        <dt>Technologies</dt>
+        <dd>{{ project.technologies|join(", ") }}</dd>
+        <dt>Role</dt>
+        <dd>{{ project.role }}</dd>
+        <dt>Team Size</dt>
+        <dd>{{ project.teamSize }}</dd>
+        <dt>Responsibilities</dt>
+        <dd>{{ project.responsibilities }}</dd>
+      </dl>
+      <div class="description">
+        {{ project.description }}
+      </div>
+    </div>
+    {% endfor %}
+  </div>
+</body>
+
+</html>
