@@ -1,0 +1,144 @@
+{
+    "personalInfo": {
+        "name": "Matt Sieker",
+        "email": "matt@siekernet.com",
+        "location": "Kansas City, MO"
+    },
+    "highlights": [
+        "15+ Years of .NET Development experience, from early betas of .NET 1 through .NET Core 3",
+        "Experience developing for web, desktop, backend, and cloud",
+        "Strong drive for self-education and personal growth",
+        "Works well as both a lone programmer and a member of a team",
+        "Can manage a project from initial requirements gathering through production deployment"
+    ],
+    "skills": [
+        {
+            "category": "Web Technologies",
+            "items": [
+                "ASP.NET",
+                "ASP.NET MVC",
+                "Razor",
+                "CSS",
+                "HTML",
+                "React",
+                "Redux"
+            ]
+        },
+        {
+            "category": "Languages",
+            "items": [
+                "C#",
+                "Python (2/3)",
+                "Javascript",
+                "Typescript",
+                "Perl",
+                "Powershell",
+                "BASH scripting",
+                "T-SQL"
+            ]
+        },
+        {
+            "category": "Databases",
+            "items": [
+                "Sql Server 2000-2017 & Azure",
+                "Sqlite",
+                "PostgreSQL"
+            ]
+        },
+        {
+            "category": "Tooling",
+            "items": [
+                "Git",
+                "Docker",
+                "RabbitMQ",
+                "Redis",
+                "Azure Devops CI",
+                "Windows Azure (Virtual Machines, Container Deployment, Batch, Logic Apps, Function Apps)"
+            ]
+        },
+        {
+            "category": "Operating Systems",
+            "items": [
+                "Windows",
+                "Windows Server 2003-2012",
+                "Ubuntu/Debian",
+                "Gentoo"
+            ]
+        },
+        {
+            "category": "Other",
+            "items": [
+                "Active Directory Administration & Setup",
+                "Exchange Administration & Setup",
+                "Network Management",
+                "Hardware Troubleshooting",
+                "SQL Server Installation and Maintenance"
+            ]
+        }
+    ],
+    "work": [
+        {
+            "employer": "Independent Consultant",
+            "location": "Kansas City, MO",
+            "position": "Developer/Architect/Infrastructure Management",
+            "startDate": "September 2017",
+            "endDate": "Current",
+            "highlights": [
+                "Implemented probabilistic genotyping system that wraps around a well-validated R library with Python, and using Docker containers on Azure Batch, allowed massively parallel processing of cases."
+            ]
+        },
+        {
+            "employer": "The Nerdery",
+            "location": "Kansas City, MO",
+            "position": "Developer",
+            "startDate": "April 2016",
+            "endDate": "September 2017",
+            "highlights": [
+                "Created lead collection sites for a major local insurance company that integrated with Docusign",
+                "Found, documented, and reported several security flaws in various client’s existing systems."
+            ]
+        },
+        {
+            "employer": "Biomedical Systems",
+            "location": "St. Louis, MO",
+            "position": "Developer",
+            "startDate": "September 2013",
+            "endDate": "March 2016",
+            "highlights": [
+                "Maintained and enhanced legacy systems.",
+                "Architected system to communicate clinical data with large pharmaceutical company",
+                "Implemented Domain Specific Language and supporting tools to allow non-technical users to create rules to verify data integrity"
+            ]
+        },
+        {
+            "employer": "MDI Achieve",
+            "location": "St. Louis, MO",
+            "position": "Developer/Architect/Infrastructure Management",
+            "startDate": "March 2013",
+            "endDate": "September 2013"
+        },
+        {
+            "employer": "Gravit8",
+            "location": "St. Louis, MO",
+            "position": "Developer/Architect/Infrastructure Management",
+            "startDate": "April 2012",
+            "endDate": "February 2013"
+        },
+        {
+            "employer": "Unidev",
+            "location": "St. Louis, MO",
+            "position": "Developer/Architect",
+            "startDate": "April 2011",
+            "endDate": "April 2012"
+        },
+        {
+            "employer": "Haas Group International (Formally Avchem, Inc.)",
+            "location": "St. Louis, MO",
+            "position": "Developer/Architect",
+            "startDate": "April 2006",
+            "endDate": "April 2011"
+        }
+    ],
+    "projects": [],
+    "$schema": "./data.schema.json"
+}

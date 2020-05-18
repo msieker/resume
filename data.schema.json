@@ -1,0 +1,93 @@
+{
+    "$schema": "http://json-schema.org/schema#",
+    "type": "object",
+    "properties": {
+        "$schema": {
+            "type": "string"
+        },
+        "personalInfo": {
+            "$ref": "#/definitions/personalInfo"
+        },
+        "highlights": {
+            "$ref": "#/definitions/highlights"
+        },
+        "skills": {
+            "$ref": "#/definitions/skills"
+        },
+        "work": {
+            "$ref": "#/definitions/work"
+        }
+    },
+    "additionalProperties": false,
+    "definitions": {
+        "personalInfo": {
+            "type": "object",
+            "properties": {
+                "name": {
+                    "type": "string"
+                },
+                "email": {
+                    "type": "string"
+                },
+                "location": {
+                    "type": "string"
+                }
+            }
+        },
+        "highlights": {
+            "type": "array",
+            "items": {
+                "type":"string"
+            },
+            "default": []
+        },
+        "skills":{
+            "type":"array",
+            "items":{"$ref": "#/definitions/skillItem"},
+            "default": []
+        },
+        "skillItem": {
+            "type": "object",
+            "properties": {
+                "category": {
+                    "type": "string"
+                },
+                "items": {
+                    "type": "array",
+                    "items": {
+                        "type": "string"
+                    }
+                }
+            }
+        },
+        "work":{
+            "type":"array",
+            "items":{"$ref": "#/definitions/workItem"},
+            "default": []
+        },
+        "workItem": {
+            "type": "object",
+            "properties": {
+                "employer": {
+                    "type": "string"
+                },
+                "position":{
+                    "type": "string"
+                },
+                "location":{
+                    "type": "string"
+                },
+                "startDate": {
+                    "type": "string"
+                },
+                "endDate": {
+                    "type": "string"
+                },
+                "highlights":{
+                    "type":"array",
+                    "items": {"type":"string"}
+                }
+            }   
+        }
+    }
+}
