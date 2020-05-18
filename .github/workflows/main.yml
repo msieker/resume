@@ -36,10 +36,10 @@ jobs:
       run: |
         mkdir ./output
         cp styles.css ./output
-    - name: Ready output directory
+    - name: Create Output
       run: |
         python3 generate.py --output ./output/index.html
     - name: Azure Login
       uses: Azure/login@v1.1
       with:
-        creds: ${{secrets.AZURE_CREDENTIALS}}
+        creds: ${{secrets.AZURE_CREDENTIALS}} 
