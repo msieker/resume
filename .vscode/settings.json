@@ -5,5 +5,14 @@
     "[python]":{
         "editor.formatOnSave": true,
         "files.trimTrailingWhitespace": true
-    }
+    },
+    "files.watcherExclude": {
+        "**/.git/objects/**": true,
+        "**/.git/subtree-cache/**": true,
+        "**/node_modules/*/**": true,
+        "**/.hg/store/**": true,
+        "**/.mypy_cache/**": true,
+        "**/.venv/**": true,
+    },
+    "python.pythonPath": "python/.venv/bin/python"
 }

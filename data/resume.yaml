@@ -1,0 +1,223 @@
+personalInfo:
+  name: Matt Sieker
+  email: matt@siekernet.com
+  location: Kansas City, Missouri, United States
+  phone: 1-636-233-3362
+highlights:
+  - "15+ Years of .NET Development experience, from early betas of .NET 1 through .NET Core 3"
+  - "Experience developing for web, desktop, backend, and cloud"
+  - "Strong drive for self-education and personal growth"
+  - "Works well as both a lone programmer and a member of a team"
+  - "Can manage a project from initial requirements gathering through production deployment"
+skills:
+  "Web Technologies":
+    - "ASP.Net"
+    - "ASP.Net Core"
+    - "Razor"
+    - "CSS/LESS"
+    - "HTML"
+    - "React"
+    - "Redux"
+  "Languages":
+    - "C#"
+    - "Python (2/3)"
+    - "Javascript"
+    - "Typescript"
+    - "Perl"
+    - "Powershell"
+    - "Bash"
+    - "T-SQL"
+  "Databases":
+    - "SQL Server 2000-2017 & Azure"
+    - "Sqlite"
+    - "PostgreSQL"
+    - "MongoDB"
+  "Tooling":
+    - "Git"
+    - "Docker"
+    - "RabbitMQ"
+    - "Redis"
+    - "Azure Devops CI"
+    - "Azure (Virtual Machines, Container Deployment, Batch, Logic Apps, Function Apps, Storage)"
+  "Operating Systems":
+    - "Windows"
+    - "Windows Server 2003-2019"
+    - "Ubuntu/Debian"
+    - "Gentoo"
+  "Other":
+    - "Active Directory Administration & Setup"
+    - "Exchange Administration & Setup"
+    - "Network Management"
+    - "Network Troubleshooting"
+    - "SQL Server Installation and Management"
+history:
+  - employer: "Independent Consultant"
+    location: "Kansas City, MO"
+    position: "Developer/Architect/Infrastructure Management"
+    startDate: "September 2017"
+    endDate: "Current"
+    highlights:
+      - >
+        Implemented probabilistic genotyping system that wraps around a well-validated R library with Python, 
+        and using Docker containers on Azure Batch, allowed massively parallel processing of cases.
+  - employer: "The Nerdery"
+    location: "Kansas City, MO"
+    position: "Developer"
+    startDate: "April 2016"
+    endDate: "September 2017"
+    highlights:
+      - "Created lead collection sites for a major local insurance company that integrated with Docusign"
+      - "Found, documented, and reported several security flaws in various client’s existing systems."
+  - employer: "Biomedical Systems"
+    location: "St. Louis, MO"
+    position: "Developer"
+    startDate: "September 2013"
+    endDate: "March 2016"
+    highlights:
+      - "Maintained and enhanced legacy systems."
+      - "Architected system to communicate clinical data with large pharmaceutical company"
+      - "Implemented Domain Specific Language and supporting tools to allow non-technical users to create rules to verify data integrity"
+  - employer: "MDI Achieve"
+    location: "St. Louis, MO"
+    position: "Developer/Architect/Infrastructure Management"
+    startDate: "March 2013"
+    endDate: "September 2013"
+    highlights:
+      - Maintained and extended legacy product
+  - employer: "Gravit8"
+    location: "St. Louis, MO"
+    position: "Developer/Architect/Infrastructure Management"
+    startDate: "April 2012"
+    endDate: "February 2013"
+    highlights:
+      - Developed an embeddable lead capture/chat application for use on any web site. 
+  - employer: "Unidev"
+    location: "St. Louis, MO"
+    position: "Developer/Architect"
+    startDate: "April 2011"
+    endDate: "April 2012"
+    highlights:
+      - >
+        Worked on building an interactive tour for a major buying club that allows content in the visitor’s browser 
+        to be controlled by an employee leading the tour. 
+      - >
+        Worked on software Set Top Box that would be installed in hotel rooms that interfaces with various home automation 
+        devices and a central server.
+  - employer: "Haas Group International (Formally Avchem, Inc.)"
+    location: "St. Louis, MO"
+    position: "Developer/Architect"
+    startDate: "April 2006"
+    endDate: "April 2011"
+    highlights:
+      - >
+        Worked extensively to maintain and enhance the company’s flagship application, Lynx Online.
+      - >
+        Developed a system to provision IP Phones connected to Asterisk.
+      - >
+        Worked on developing and maintaining applications for Personal Data Terminals running Windows Mobile 
+        with .Net Compact Framework
+projects:
+  - name: "BulletProof"
+    employer: "Genetic Technologies, Inc"
+    dateRange: "2016-Current"
+    teamSize: 3
+    role: "Lead Developer"
+    responsibilities: "Architect and implementation"
+    technologies: 
+      - "C#"
+      - "ASP.Net Core"
+      - "SQL Server"
+      - "EF Core"
+      - "Redis"
+      - "Python"
+      - "R"
+      - "Azure Batch"
+      - "Docker"
+      - "Typescript"
+      - "React"
+    description: >
+      BulletProof is a software stack that takes an existing R library that does forensic
+      DNA analysis, and exposes it through an easy to use website. Being cloud native, 
+      it is hosted by a set of Docker images running on an Azure VM, with file Storage
+      provided by Azure Blob storage. It is designed from the ground up to be multi-tenant
+      with strict access controls ensuring that data is not visible between tenants.
+      The web part of BulletProof allows users to upload files that contain DNA profiles,
+      create cases with these profiles, and submit jobs to the backend for execution.
+      On the backend, a C# console application queues the jobs into Redis and schedules the
+      jobs on Azure Batch and monitors their execution. Using Azure batch, the system can 
+      transparently scale to hundreds of cores depending on the workload.
+      On each worker, a Docker image containing the R package and a Python script that
+      communicates with R using rpy2 executes the jobs. Each job is broken into several
+      tasks that can run in parallel, with dependencies between them, and Redis is used
+      for IPC between tasks.    
+  - name: "Request Module Update"
+    employer: "Avchem"
+    dateRange: "2006"
+    teamSize: 2
+    role: "Developer"
+    responsibilities: "Design and Implementation"
+    technologies: 
+      - "VB.Net"
+      - "ASP.Net"
+      - "SQL Server"
+      - "Javascript"
+    description: >
+      The request module allows customers to define a form and workflow for a process. 
+      This was then added to the system where end-users could submit requests for a process. 
+      The update added several features: graphical designers for both the form and workflow, 
+      with the workflow editor displaying a dynamically generated flowchart for the current workflow; 
+      the ability to have a step on the workflow be subdivided into several approvals that can be done in parallel; 
+      redirecting the workflow based on fields on the form; and the ability to create groups of users to be 
+      included on a workflow step, that can inherit users from sites above, and allows for easier maintenance; 
+      and the ability to import and export definitions of requests between instances (training, production, etc). 
+      Existing data was transformed and adapted to newer standards either on the fly, for simple changes, 
+      or with a Python script that was run during deployment.
+  - name: "Virtual Tour"
+    employer: "Gravit8"
+    dateRange: "2011-2013"
+    teamSize: 3
+    role: "Lead Developer"
+    responsibilities: "Architect and implementation"
+    technologies: 
+      - "C#"
+      - "ASP.Net MVC"
+      - "SQL Server"
+      - "NHibernate"
+    description: >
+      Virtual Tour allows prospective members of a buying club to browse through available products while under 
+      direction of a company representative. Once a Virtual Tour starts, the representative is able to guide the 
+      prospect through the site, highlighting specific products, leading the prospect on a path that results in 
+      them visiting their local showroom, and possibly becoming a member. Implementation a Javascript front end 
+      that utilized Knockout.js for building pages based on data, communicating to the web server via COMET 
+      requests (AJAX long polling). The web application was created in .NET 4.0 communicating with several 
+      different systems, including internal legacy systems for product and appointment data, along with payment 
+      processors and document signing solutions.
+      In addition to the core functionality, an offline version was created, utilizing HTML5 offline applications 
+      to allow extensive product listings to be cached on devices (iOS, Android, desktop/laptops). 
+  - name: "Captiv8"
+    employer: "Gravit8"
+    dateRange: "2012-2013"
+    teamSize: 3
+    role: "Lead Developer"
+    responsibilities: "Architect and implementation"
+    technologies: 
+      - "C#"
+      - "ASP.Net MVC"
+      - "SQL Server"
+      - "NHibernate"
+      - "RabbitMQ"
+      - "Redis"
+      - "node.js"
+    description: >
+      Captiv8 is part of an SaaS stack that allows call center representatives to monitor visitors 
+      real-time on a web site, engage in chat, collection lead information, and launch into other 
+      web-based systems for further sales aids. The representative could also start a "co-browsing" 
+      session, in which the visitor’s browser and the representative’s would share navigation and 
+      form fill for pages on the site, with no software install. A simple HTML snippet is provided
+      for embedding into an existing site that would enable this functionality.
+      Node.js with socket.io is used to communicate between the browsers dispatch events to the backend 
+      systems for processing, via RabbitMQ. The backend systems consist of a Azure service listening to 
+      the RabbitMQ message queue, updating any needed data, and then dispatching response messages over 
+      RabbitMQ back to the Node.js frontend.
+    
+    
